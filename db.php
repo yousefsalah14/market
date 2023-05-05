@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"]=="post"){
 if(isset($_POST['submit']))
 {    
      if (mysqli_query($con, $sql)) {
-        echo "New record has been added successfully !";
+        // echo "New record has been added successfully !";
      } else {
         echo "Error: " . $sql . ":-" . mysqli_error($con);
      }
